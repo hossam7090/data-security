@@ -16,3 +16,9 @@ D:\FCIS 2024-IS3 Part2\Data Security\SecurityPackage[Template]\SecurityLibrary\o
 D:\FCIS 2024-IS3 Part2\Data Security\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.CoreCompileInputs.cache
 D:\FCIS 2024-IS3 Part2\Data Security\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.dll
 D:\FCIS 2024-IS3 Part2\Data Security\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.AssemblyReference.cache

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4638fc66-5518-485d-a541-d0a6044730b0": {
+      "ProjectGuid": "4638fc66-5518-485d-a541-d0a6044730b0",
+      "DisplayName": "SecurityPackageTest",
+      "ColorIndex": 0
+    },
+    "64afbae4-208f-4f5d-b9f4-cca2e71f36e4": {
+      "ProjectGuid": "64afbae4-208f-4f5d-b9f4-cca2e71f36e4",
+      "DisplayName": "SecurityLibrary",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -329,8 +329,6 @@ namespace SecurityLibrary.AES
             }
             return result;
         }
-
-
         string Invs_box(string s)
         {
             string[,] inverse_sbox = new string[,] {
@@ -414,7 +412,7 @@ namespace SecurityLibrary.AES
             }
             return result;
         }
-        String Shift_1B(string bin)//shift left and xor with 1B
+        String Shift(string bin)
         {
             if (bin[0] == '0')
             {
@@ -425,38 +423,38 @@ namespace SecurityLibrary.AES
                 return xoring((bin.Remove(0, 1) + "0"), "00011011", 8);
             }
         }
-        string _09(string bin)//bin×09=(((bin×2)×2)×2)+bin
+        string invGF_m(string bin, string x)
         {
-            string res = xoring(Shift_1B(Shift_1B(Shift_1B(bin))), bin, 8);
-            return res;
-        }
-        string _0B(string bin)//bin×0B=((((bin×2)×2)+bin)×2)+bin
-        {
-            string res = xoring(Shift_1B(xoring(Shift_1B(Shift_1B(bin)), bin, 8)), bin, 8);
-            return res;
-        }
-        string _0D(string bin)//bin×0D=((((bin×2)+bin)×2)×2)+bin
-        {
-            string res = xoring(Shift_1B(Shift_1B(xoring(Shift_1B(bin), bin, 8))), bin, 8);
-            return res;
+            string result = "";
+            if (x == "09")
+            {
+                result = xoring(Shift(Shift(Shift(bin))), bin, 8);
+            }
+            else if (x == "0B")
+            {
+                result = xoring(Shift(xoring(Shift(Shift(bin)), bin, 8)), bin, 8);
+            }
+            else if (x == "0D")
+            {
+                result = xoring(Shift(Shift(xoring(Shift(bin), bin, 8))), bin, 8);
+            }
+            else if (x == "0E")
+            {
+                result = Shift(xoring(Shift(xoring(Shift(bin), bin, 8)), bin, 8));
+            }
 
-        }
-        string _0E(string bin)//bin×0E=((((bin×2)+bin)×2)+bin)×2
-        {
-            string res = Shift_1B(xoring(Shift_1B(xoring(Shift_1B(bin), bin, 8)), bin, 8));
-            return res;
-
+            return result;
         }
         string[,] InvMixColumns(string[,] matrix)
         {
-            string[,] Inverse_MixColumnFactor = {
-    { "0E" ,  "0B" ,  "0D" ,  "09" },
-    { "09" ,  "0E" ,  "0B" ,  "0D" },
-    { "0D" ,  "09" ,  "0E" ,  "0B" },
-    { "0B" ,  "0D" ,  "09" ,  "0E" }
-    };
+            string[,] c = {
+                { "0E" ,  "0B" ,  "0D" ,  "09" },
+                { "09" ,  "0E" ,  "0B" ,  "0D" },
+                { "0D" ,  "09" ,  "0E" ,  "0B" },
+                { "0B" ,  "0D" ,  "09" ,  "0E" }
+            };
 
-            string[,] mixed = { { "", "", "", "" }, { "", "", "", "" }, { "", "", "", "" }, { "", "", "", "" } };
+            string[,] result = { { "", "", "", "" }, { "", "", "", "" }, { "", "", "", "" }, { "", "", "", "" } };
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -466,32 +464,16 @@ namespace SecurityLibrary.AES
 
 
 
-                        StringBuilder binary1 = new StringBuilder((matrix[k, j]));
+                        String s = matrix[k, j];
                         string res = "";
-                        if (Inverse_MixColumnFactor[i, k].Equals("09", StringComparison.OrdinalIgnoreCase))
-                        {
-                            res = _09(binary1.ToString());
-                        }
-                        else if (Inverse_MixColumnFactor[i, k].Equals("0B", StringComparison.OrdinalIgnoreCase))
-                        {
-                            res = _0B(binary1.ToString());
-                        }
-                        else if (Inverse_MixColumnFactor[i, k].Equals("0D", StringComparison.OrdinalIgnoreCase))
-                        {
-                            res = _0D(binary1.ToString());
-                        }
-                        else if (Inverse_MixColumnFactor[i, k].Equals("0E", StringComparison.OrdinalIgnoreCase))
-                        {
-                            res = _0E(binary1.ToString());
-                        }
-                        mixed[i, j] = xoring(mixed[i, j].PadLeft(8, '0'), res, 8);
+                        res = invGF_m(s.ToString(), c[i, k]);
+                        result[i, j] = xoring(result[i, j].PadLeft(8, '0'), res, 8);
 
                     }
                 }
             }
-            return mixed;
+            return result;
         }
-
 
 
 

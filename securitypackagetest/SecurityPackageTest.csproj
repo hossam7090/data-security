@@ -71,6 +71,10 @@
       <Name>SecurityLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AESTest.cs" />
+    <Compile Include="ExtendedEuclidTest.cs" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
