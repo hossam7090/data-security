@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AES\AES.cs" />
     <Compile Include="AES\ExtendedEuclid.cs" />
+    <Compile Include="ElGamal\ELGAMAL.cs" />
     <Compile Include="ICryptographic_Technique.cs" />
     <Compile Include="MainAlgorithms\Columnar.cs" />
     <Compile Include="DES\DES.cs" />
@@ -63,7 +65,10 @@
     <Compile Include="ICryptographicTechnique.cs" />
     <Compile Include="RSA\RSA.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="desktop.ini" />
+    <None Include="ElGamal\desktop.ini" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -34,3 +34,12 @@ C:\Users\LENOVO\Desktop\MS_3\SecurityPackageTest\obj\Debug\SecurityPackageTest.c
 C:\Users\LENOVO\Desktop\MS_3\SecurityPackageTest\obj\Debug\SecurityPackageTest.csproj.CopyComplete
 C:\Users\LENOVO\Desktop\MS_3\SecurityPackageTest\obj\Debug\SecurityPackageTest.dll
 C:\Users\LENOVO\Desktop\MS_3\SecurityPackageTest\obj\Debug\SecurityPackageTest.pdb
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\bin\Debug\SecurityPackageTest.dll
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\bin\Debug\SecurityPackageTest.pdb
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\bin\Debug\SecurityLibrary.dll
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\bin\Debug\SecurityLibrary.pdb
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\obj\Debug\SecurityPackageTest.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\obj\Debug\SecurityPackageTest.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\obj\Debug\SecurityPackageTest.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\obj\Debug\SecurityPackageTest.dll
+C:\Users\LENOVO\Desktop\data-security\SecurityPackageTest\obj\Debug\SecurityPackageTest.pdb

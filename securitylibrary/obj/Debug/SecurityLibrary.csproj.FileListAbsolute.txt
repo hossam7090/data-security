@@ -22,3 +22,9 @@ C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.Co
 C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.dll
 C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
 C:\Users\LENOVO\Desktop\MS_3\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\data-security\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+C:\Users\LENOVO\Desktop\data-security\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+C:\Users\LENOVO\Desktop\data-security\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\data-security\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\data-security\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+C:\Users\LENOVO\Desktop\data-security\SecurityLibrary\obj\Debug\SecurityLibrary.pdb

@@ -54,12 +54,16 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ColumnarTest.cs" />
+    <Compile Include="DeffieHelmanTest.cs" />
+    <Compile Include="ElGamalTest.cs" />
     <Compile Include="HillCipherTest.cs" />
     <Compile Include="PlayfairTest.cs" />
     <Compile Include="MonoalphabeticTest.cs" />
     <Compile Include="CeaserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RailFenceTest.cs" />
+    <Compile Include="RC4Test.cs" />
+    <Compile Include="RSATest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="UnitTest2.cs" />
     <Compile Include="UnitTest3.cs" />
@@ -74,6 +78,9 @@
   <ItemGroup>
     <Compile Include="AESTest.cs" />
     <Compile Include="ExtendedEuclidTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="desktop.ini" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
